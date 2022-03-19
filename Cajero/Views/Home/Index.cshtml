@@ -1,0 +1,12 @@
+﻿@model Cajero.Models.Monto
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Ingresar un monto</h1>
+   <form asp-controller="Home" asp-action="BalidarCajero">
+       <input type="number" asp-for="monto"/>
+       <input type="submit" value="aceptar" />
+   </form>
+</div>
